@@ -1,0 +1,38 @@
+{
+  "_comment": "Edit this file each term, then commit. GitHub Actions will automatically run update_classes.js and update every homework HTML file.",
+  "term": "Term 2 2026",
+
+  "A1": [
+    { "section": "3087", "schedule": "Mon/Wed 11:00 AM", "teacher": "Eunice Salazar" },
+    { "section": "3097", "schedule": "Tue/Thu 6:30 PM",  "teacher": "Eunice Salazar" }
+  ],
+
+  "A2": [
+    { "section": "3086", "schedule": "Mon/Wed 9:00 AM",  "teacher": "Eunice Salazar" },
+    { "section": "3099", "schedule": "Tue/Thu 8:30 PM",  "teacher": "Eunice Salazar" }
+  ],
+
+  "B1": [
+    { "section": "3088", "schedule": "Mon/Wed 9:00 AM",  "teacher": "Laura Ebel" },
+    { "section": "3090", "schedule": "Mon/Wed 6:30 PM",  "teacher": "Laura Ebel" },
+    { "section": "3095", "schedule": "Tue/Thu 11:00 AM", "teacher": "Laura Ebel" },
+    { "section": "3098", "schedule": "Tue/Thu 6:30 PM",  "teacher": "Jonelle Williams" },
+    { "section": "3101", "schedule": "Tue/Thu 8:30 PM",  "teacher": "Jonelle Williams" }
+  ],
+
+  "B2": [
+    { "section": "3096", "schedule": "Tue/Thu 6:30 PM",  "teacher": "Angela Gradiska" },
+    { "section": "3100", "schedule": "Tue/Thu 8:30 PM",  "teacher": "Angela Gradiska" },
+    { "section": "3089", "schedule": "Mon/Wed 6:30 PM",  "teacher": "Jonelle Williams" },
+    { "section": "3092", "schedule": "Mon/Wed 8:30 PM",  "teacher": "Jonelle Williams" }
+  ],
+
+  "C1": [
+    { "section": "3091", "schedule": "Mon/Wed 6:30 PM",  "teacher": "Angela Gradiska" },
+    { "section": "3093", "schedule": "Tue/Thu 8:30 PM",  "teacher": "Angela Gradiska" }
+  ],
+
+  "CONV": [
+    { "section": "3094", "schedule": "Mon/Wed 9:00 AM",  "teacher": "Laura Ebel" }
+  ]
+}
