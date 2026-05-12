@@ -1,0 +1,39 @@
+name: Update homework class dropdowns across all repos
+
+# Runs:
+#   - automatically when classes.json or the script changes on the main branch
+#   - manually anytime from the Actions tab ("Run workflow" button)
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'classes.json'
+      - 'update_all_repos.js'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run? (preview without committing)'
+        required: false
+        default: 'false'
+        type: choice
+        options: ['false', 'true']
+
+jobs:
+  update-all:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the config repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run cross-repo updater
+        env:
+          # SQA_PAT is a Personal Access Token stored as a repo secret.
+          # See README in this repo for how to create and store it.
+          GITHUB_TOKEN: ${{ secrets.SQA_PAT }}
+          DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '0' }}
+        run: node update_all_repos.js
