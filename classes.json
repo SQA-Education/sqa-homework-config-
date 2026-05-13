@@ -1,38 +1,164 @@
 {
-  "_comment": "Edit this file each term, then commit. GitHub Actions will automatically run update_classes.js and update every homework HTML file.",
+  "_comment_top": "==================================================================",
+  "_comment_purpose": "SQA HOMEWORK CONFIG — single source of truth for dropdowns.",
+  "_comment_howto": "To roll a new term: update the 'classes' arrays below, then commit. The workflow updates every listed repo automatically.",
+  "_comment_note": "Quiz repos (B1Quiz3, B1Quiz4, B2Quiz3) are intentionally NOT listed. Add them later if needed.",
+  "_comment_bottom": "==================================================================",
+
   "term": "Term 2 2026",
+  "organization": "SQA-Education",
 
-  "A1": [
-    { "section": "3087", "schedule": "Mon/Wed 11:00 AM", "teacher": "Eunice Salazar" },
-    { "section": "3097", "schedule": "Tue/Thu 6:30 PM",  "teacher": "Eunice Salazar" }
-  ],
+  "A1": {
+    "repos": [
+      "Homework_A1_Class1",
+      "Homework_A1_Class2",
+      "Homework_A1_Class3",
+      "Homework_A1_Class4",
+      "Homework_A1_Class5",
+      "Homework_A1_Class6",
+      "Homework_A1_Class7",
+      "Homework_A1_Class8",
+      "Homework_A1_Class9",
+      "Homework_A1_Class10",
+      "Homework_A1_Class11",
+      "Homework_A1_Class12",
+      "Homework_A1_Class13",
+      "Homework_A1_Class14",
+      "A1Class15",
+      "A1FinalTest"
+    ],
+    "classes": [
+      { "section": "3087", "schedule": "Mon/Wed 11:00 AM", "teacher": "Eunice Salazar" },
+      { "section": "3097", "schedule": "Tue/Thu 6:30 PM",  "teacher": "Eunice Salazar" }
+    ]
+  },
 
-  "A2": [
-    { "section": "3086", "schedule": "Mon/Wed 9:00 AM",  "teacher": "Eunice Salazar" },
-    { "section": "3099", "schedule": "Tue/Thu 8:30 PM",  "teacher": "Eunice Salazar" }
-  ],
+  "A2": {
+    "repos": [
+      "A2HWClass1",
+      "A2HWClass2",
+      "A2HWClass3",
+      "A2HWClass4",
+      "A2HWClass5",
+      "A2HWClass6",
+      "A2HWClass7",
+      "A2HWClass8",
+      "A2HWClass9",
+      "A2HWClass10",
+      "A2HWClass11",
+      "A2HWClass12",
+      "A2HWClass13",
+      "A2HWClass14",
+      "A2Class15",
+      "A2FinalTest"
+    ],
+    "classes": [
+      { "section": "3086", "schedule": "Mon/Wed 9:00 AM",  "teacher": "Eunice Salazar" },
+      { "section": "3099", "schedule": "Tue/Thu 8:30 PM",  "teacher": "Eunice Salazar" }
+    ]
+  },
 
-  "B1": [
-    { "section": "3088", "schedule": "Mon/Wed 9:00 AM",  "teacher": "Laura Ebel" },
-    { "section": "3090", "schedule": "Mon/Wed 6:30 PM",  "teacher": "Laura Ebel" },
-    { "section": "3095", "schedule": "Tue/Thu 11:00 AM", "teacher": "Laura Ebel" },
-    { "section": "3098", "schedule": "Tue/Thu 6:30 PM",  "teacher": "Jonelle Williams" },
-    { "section": "3101", "schedule": "Tue/Thu 8:30 PM",  "teacher": "Jonelle Williams" }
-  ],
+  "B1": {
+    "repos": [
+      "B1HWClass1",
+      "B1HomeworkClass2",
+      "B1HWClass3",
+      "B1HWClass4",
+      "B1HWClass5",
+      "B1HWClass6",
+      "B1HWClass7",
+      "B1HWClass8",
+      "B1HWClass9",
+      "B1HWClass10",
+      "B1HWClass11",
+      "B1HWClass12",
+      "B1HWClass13",
+      "B1HWClass14",
+      "B1Class15",
+      "B1Final-Test"
+    ],
+    "classes": [
+      { "section": "3088", "schedule": "Mon/Wed 9:00 AM",  "teacher": "Laura Ebel" },
+      { "section": "3090", "schedule": "Mon/Wed 6:30 PM",  "teacher": "Laura Ebel" },
+      { "section": "3095", "schedule": "Tue/Thu 11:00 AM", "teacher": "Laura Ebel" },
+      { "section": "3098", "schedule": "Tue/Thu 6:30 PM",  "teacher": "Jonelle Williams" },
+      { "section": "3101", "schedule": "Tue/Thu 8:30 PM",  "teacher": "Jonelle Williams" }
+    ]
+  },
 
-  "B2": [
-    { "section": "3096", "schedule": "Tue/Thu 6:30 PM",  "teacher": "Angela Gradiska" },
-    { "section": "3100", "schedule": "Tue/Thu 8:30 PM",  "teacher": "Angela Gradiska" },
-    { "section": "3089", "schedule": "Mon/Wed 6:30 PM",  "teacher": "Jonelle Williams" },
-    { "section": "3092", "schedule": "Mon/Wed 8:30 PM",  "teacher": "Jonelle Williams" }
-  ],
+  "B2": {
+    "repos": [
+      "B2HWClass1",
+      "B2HWClass2",
+      "B2HWClass3",
+      "B2HWClass4",
+      "B2HWClass5",
+      "B2HWClass6",
+      "B2HWClass7",
+      "B2HWClass8",
+      "B2HWClass9",
+      "B2HWClass10",
+      "B2HWClass11",
+      "B2HWClass12",
+      "B2HWClass13",
+      "B2HWClass14",
+      "B2Class15",
+      "B2FinalTest"
+    ],
+    "classes": [
+      { "section": "3096", "schedule": "Tue/Thu 6:30 PM",  "teacher": "Angela Gradiska" },
+      { "section": "3100", "schedule": "Tue/Thu 8:30 PM",  "teacher": "Angela Gradiska" },
+      { "section": "3089", "schedule": "Mon/Wed 6:30 PM",  "teacher": "Jonelle Williams" },
+      { "section": "3092", "schedule": "Mon/Wed 8:30 PM",  "teacher": "Jonelle Williams" }
+    ]
+  },
 
-  "C1": [
-    { "section": "3091", "schedule": "Mon/Wed 6:30 PM",  "teacher": "Angela Gradiska" },
-    { "section": "3093", "schedule": "Tue/Thu 8:30 PM",  "teacher": "Angela Gradiska" }
-  ],
+  "C1": {
+    "repos": [
+      "C1HWClass1",
+      "C1HWClass2",
+      "C1HWClass3",
+      "C1HWClass4",
+      "C1HWClass5",
+      "C1HWClass6",
+      "C1HWClass7",
+      "C1HWClass8",
+      "C1HWClass9",
+      "C1HWClass10",
+      "C1HWClass11",
+      "C1HWClass12",
+      "C1HWClass13",
+      "C1HWClass14",
+      "C1Class15",
+      "C1FinalTest"
+    ],
+    "classes": [
+      { "section": "3091", "schedule": "Mon/Wed 6:30 PM",  "teacher": "Angela Gradiska" },
+      { "section": "3093", "schedule": "Tue/Thu 8:30 PM",  "teacher": "Angela Gradiska" }
+    ]
+  },
 
-  "CONV": [
-    { "section": "3094", "schedule": "Mon/Wed 9:00 AM",  "teacher": "Laura Ebel" }
-  ]
+  "CONV": {
+    "repos": [
+      "CONVHWClass1",
+      "CONVHWClass2",
+      "CONVHWClass3",
+      "CONVHWClass4",
+      "CONVHWClass5",
+      "CONVHWClass6",
+      "CONVHWClass7",
+      "CONVHWClass8",
+      "CONVHWClass9",
+      "CONVHWClass10",
+      "CONVHWClass11",
+      "CONVHWClass12",
+      "CONVHWClass13",
+      "CONVHWClass14",
+      "ConversationClass15",
+      "conversationfinal"
+    ],
+    "classes": [
+      { "section": "3094", "schedule": "Mon/Wed 9:00 AM",  "teacher": "Laura Ebel" }
+    ]
+  }
 }
