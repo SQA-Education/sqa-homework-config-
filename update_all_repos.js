@@ -117,6 +117,39 @@ function replaceSelectBody(html, selectId, newInnerHTML) {
   return html.replace(re, (_m, open, _body, close) => `${open}\n${newInnerHTML}\n${close}`);
 }
 
+// Hide an orphaned "Your Teacher" label that sits immediately above a
+// hidden teacherName input. Some hand-built files (C1 Class 12-14, etc.)
+// have a visible <label>Your Teacher</label> followed by an
+// <input type="hidden" id="teacherName">, leaving the label dangling
+// with nothing visible underneath. We hide that specific label via
+// inline style; we never touch the hidden input itself (it's filled by
+// setTeacher() and submitted to the form, which works correctly).
+//
+// Very narrow match: only the EXACT pattern
+//   <label ...>Your Teacher</label>\s*<input type="hidden" id="teacherName" ...>
+// is touched. If the label is already display:none we leave it alone.
+function hideOrphanedTeacherLabel(html) {
+  const re = /(<label\b)([^>]*?)(>\s*Your Teacher\s*<\/label>)(\s*<input\b[^>]*\btype=["']hidden["'][^>]*\bid=["']teacherName["'])/i;
+  if (!re.test(html)) return html;
+  return html.replace(re, (_m, open, attrs, closeTag, nextInput) => {
+    // Already hidden? Don't double-edit.
+    if (/style=["'][^"']*display\s*:\s*none/i.test(attrs)) return _m;
+    let newAttrs;
+    if (/\bstyle=["']/i.test(attrs)) {
+      // Append display:none to existing style attribute.
+      newAttrs = attrs.replace(/(\bstyle=["'])([^"']*)(["'])/i, (_s, pre, val, post) => {
+        const v = val.trim();
+        const sep = v.length && !v.endsWith(';') ? '; ' : '';
+        return `${pre}${v}${sep}display:none${post}`;
+      });
+    } else {
+      // No style attribute: add one.
+      newAttrs = `${attrs} style="display:none"`;
+    }
+    return `${open}${newAttrs}${closeTag}${nextInput}`;
+  });
+}
+
 // A1 structural conversion: studentClass -> className pattern.
 function convertA1Structure(html) {
   // 1) Hidden teacherName input above the select.
@@ -160,6 +193,11 @@ function convertA1Structure(html) {
 function transformHtml(original, level, classes) {
   let html = original;
   if (level === 'A1') html = convertA1Structure(html);
+
+  // Defensive fix: hide any orphaned "Your Teacher" label that sits above
+  // a hidden teacherName input. Affects only files with that exact pattern
+  // (some C1 files in particular). Idempotent — safe to run repeatedly.
+  html = hideOrphanedTeacherLabel(html);
 
   const next = replaceSelectBody(html, 'className', buildClassNameOptions(classes));
   if (next !== null) return next;
