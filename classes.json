@@ -3,9 +3,10 @@
   "_comment_purpose": "SQA HOMEWORK CONFIG — single source of truth for dropdowns.",
   "_comment_howto": "To roll a new term: update the 'classes' arrays below, then commit. The workflow updates every listed repo automatically.",
   "_comment_note": "Quiz repos (B1Quiz3, B1Quiz4, B2Quiz3) are intentionally NOT listed. Add them later if needed.",
+  "_comment_conv": "CONV section removed for Term 3 — existing CONVHW repos are Term 2 archives. When new Term 3 conversation repos are created, add a CONV section back with their names and the Term 3 sections (3090 Mon/Wed 6:30 PM Laura Ebel, 3096 Tue/Thu 9:00 AM Laura Ebel).",
   "_comment_bottom": "==================================================================",
 
-  "term": "Term 2 2026",
+  "term": "Term 3 2026",
   "organization": "SQA-Education",
 
   "A1": {
@@ -29,7 +30,7 @@
     ],
     "classes": [
       { "section": "3087", "schedule": "Mon/Wed 11:00 AM", "teacher": "Eunice Salazar" },
-      { "section": "3097", "schedule": "Tue/Thu 6:30 PM",  "teacher": "Eunice Salazar" }
+      { "section": "3098", "schedule": "Tue/Thu 6:30 PM",  "teacher": "Eunice Salazar" }
     ]
   },
 
@@ -54,7 +55,8 @@
     ],
     "classes": [
       { "section": "3086", "schedule": "Mon/Wed 9:00 AM",  "teacher": "Eunice Salazar" },
-      { "section": "3099", "schedule": "Tue/Thu 8:30 PM",  "teacher": "Eunice Salazar" }
+      { "section": "3091", "schedule": "Mon/Wed 6:30 PM",  "teacher": "Hector Amaya" },
+      { "section": "3101", "schedule": "Tue/Thu 8:30 PM",  "teacher": "Hector Amaya" }
     ]
   },
 
@@ -79,10 +81,10 @@
     ],
     "classes": [
       { "section": "3088", "schedule": "Mon/Wed 9:00 AM",  "teacher": "Laura Ebel" },
-      { "section": "3090", "schedule": "Mon/Wed 6:30 PM",  "teacher": "Laura Ebel" },
-      { "section": "3095", "schedule": "Tue/Thu 11:00 AM", "teacher": "Laura Ebel" },
-      { "section": "3098", "schedule": "Tue/Thu 6:30 PM",  "teacher": "Jonelle Williams" },
-      { "section": "3101", "schedule": "Tue/Thu 8:30 PM",  "teacher": "Jonelle Williams" }
+      { "section": "3092", "schedule": "Mon/Wed 6:30 PM",  "teacher": "Jonelle Williams" },
+      { "section": "3093", "schedule": "Mon/Wed 8:30 PM",  "teacher": "Jonelle Williams" },
+      { "section": "3099", "schedule": "Tue/Thu 6:30 PM",  "teacher": "Jonelle Williams" },
+      { "section": "3103", "schedule": "Tue/Thu 8:30 PM",  "teacher": "Jonelle Williams" }
     ]
   },
 
@@ -106,10 +108,10 @@
       "B2FinalTest"
     ],
     "classes": [
-      { "section": "3096", "schedule": "Tue/Thu 6:30 PM",  "teacher": "Angela Gradiska" },
-      { "section": "3100", "schedule": "Tue/Thu 8:30 PM",  "teacher": "Angela Gradiska" },
-      { "section": "3089", "schedule": "Mon/Wed 6:30 PM",  "teacher": "Jonelle Williams" },
-      { "section": "3092", "schedule": "Mon/Wed 8:30 PM",  "teacher": "Jonelle Williams" }
+      { "section": "3089", "schedule": "Mon/Wed 6:30 PM",  "teacher": "Angela Gradiska" },
+      { "section": "3094", "schedule": "Mon/Wed 8:30 PM",  "teacher": "Angela Gradiska" },
+      { "section": "3097", "schedule": "Tue/Thu 6:30 PM",  "teacher": "Angela Gradiska" },
+      { "section": "3102", "schedule": "Tue/Thu 8:30 PM",  "teacher": "Angela Gradiska" }
     ]
   },
 
@@ -133,32 +135,8 @@
       "C1FinalTest"
     ],
     "classes": [
-      { "section": "3091", "schedule": "Mon/Wed 6:30 PM",  "teacher": "Angela Gradiska" },
-      { "section": "3093", "schedule": "Tue/Thu 8:30 PM",  "teacher": "Angela Gradiska" }
-    ]
-  },
-
-  "CONV": {
-    "repos": [
-      "CONVHWClass1",
-      "CONVHWClass2",
-      "CONVHWClass3",
-      "CONVHWClass4",
-      "CONVHWClass5",
-      "CONVHWClass6",
-      "CONVHWClass7",
-      "CONVHWClass8",
-      "CONVHWClass9",
-      "CONVHWClass10",
-      "CONVHWClass11",
-      "CONVHWClass12",
-      "CONVHWClass13",
-      "CONVHWClass14",
-      "ConversationClass15",
-      "conversationfinal"
-    ],
-    "classes": [
-      { "section": "3094", "schedule": "Mon/Wed 9:00 AM",  "teacher": "Laura Ebel" }
+      { "section": "3095", "schedule": "Mon/Wed 8:30 PM",  "teacher": "Hector Amaya" },
+      { "section": "3100", "schedule": "Tue/Thu 6:30 PM",  "teacher": "Hector Amaya" }
     ]
   }
 }
